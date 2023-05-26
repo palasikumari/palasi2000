@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #canvas {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 1px solid black;
+    }
+    #circle {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid black;
+      background-color: blue;
+    }
+    #arrow {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+<left>Bubbles App</left>
+  <div id="canvas">
+    <div id="circle"></div>
+    <div id="arrow">&larr;</div>
+  </div>
+  <button id="hit"><align=right>Hit</right></button>
+  <button id="reset"><align=right>Reset</right></button>
+
+  <script>
+    document.getElementById("hit").addEventListener("click", function() {
+      var circle = document.getElementById("circle");
+      var arrow = document.getElementById("arrow");
+      circle.style.backgroundColor = "yellow";
+      arrow.style.right = "261px"; // Moves arrow to the border of the circle
+    });
+
+    document.getElementById("reset").addEventListener("click", function() {
+      var circle = document.getElementById("circle");
+      var arrow = document.getElementById("arrow");
+      circle.style.backgroundColor = "blue";
+      arrow.style.right = "10px"; // Moves arrow back to the original position
+    });
+  </script>
+</body>
+</html>
