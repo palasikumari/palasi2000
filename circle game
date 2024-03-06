@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- On pressing the hit button the arrow moves to the circle and the colour of the circle changes to yellow. Ideal for desktop site view. -->
   <style>
     #canvas {
       position: relative;
@@ -30,7 +31,7 @@
   </style>
 </head>
 <body>
-<left>Bubbles App</left>
+<left>Circle Game</left>
   <div id="canvas">
     <div id="circle"></div>
     <div id="arrow">&larr;</div>
